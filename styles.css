@@ -1,0 +1,59 @@
+body {
+    background-color: brown;
+    width:100%;
+    color: white;
+    font-family: Tohama;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem; 
+  }
+  
+  fieldset {
+    border: none;
+    border-bottom: 3px solid #1b1b4f;
+    padding: none;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+  
+  input[type='radio'] {
+    width: unset;
+  }
+  
+  input[type='checkbox'] {
+    width: unset
+  }
+  legend {
+    padding-top: 23px;
+    padding-bottom: 0
+  }
+  
+  textarea { 
+    height: 75px;
+  } 
+  
+  img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Survey Form</title>
+  </head>
+  <body>
+   <h1 id='title'>How can <em>Fulham</em> football club improve?</h1>
+   <img src='https://seeklogo.com/images/F/fulham-fc-logo-EBBC39136A-seeklogo.com.png' alt='fulham logo'>
+   <p id='description'>Thank you for taking time to help fulham football club to improve.</p> 
+   <main>
+    <form id='survey-form'>
+      <fieldset>
+       <label id='name-label'>Name <input placeholder='name' type='text' id='name' required></label>
+       <label id='email-label'>Email <input placeholder='email address' type='email' id='email' required></label>
+       <label id='number-label'>Age <input placeholder='age'  min='13' max='75' type='number' id='number' required></label>
+       <label for='dropdown'>
+         how many times do you watch football?
+         <select id='dropdown'>
+           <option>choose from below</option>
+           <option>every day of the week</option> 
+           <option>3-4 times in a week</option>
+         </select>
+        </label>
+       </fieldset>
+       <fieldset>
+         <legend>Can the Club improve?</legend>
+         <label for='yes'><input id='yes' name='yes-no' value='yes' type='radio'>Yes</label>
+         <label for='no'><input checked id='no' name='yes-no' value='no' type='radio'>No</label>
+       </fieldset>
+       <fieldset>
+         <legend>Where is improvement needed?</legend>
+         <label for='players'><input name='players' value='players' id='playes' type='checkbox'>Players</label>
+         <label for='couch'><input name='couch' id='couch' value='couch' type='checkbox'>Couch</label>
+         <label for='training-schedule'><input value='training' name='training-schedule' id='training schedule' type='checkbox'>Training schedule</label>
+       </fieldset>
+       <label>Help us with your ideas<textarea placeholder='write to us your view'></textarea></label> 
+       <label><button id=submit>Submit</button></label>  
+     </form>
+   </main>
+  </body>
+</html>
