@@ -1,0 +1,218 @@
+* {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --base-color1: gray;
+    --base-color2: #fff;
+    --base-color3: black;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 170vw;
+    box-sizing: border-box;
+    background-color: lightgray;
+  }
+  
+  #navbar {
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: #008B8B;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+  }
+  
+  nav > a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--base-color2);
+    transition: transform 0.21s ease-in-out;
+  }
+  
+  #navbar a:hover {
+    background: var(--base-color1);
+    transform: translateY(-3px);
+  }
+  
+  main {
+  margin-top: 40px;
+  }
+  
+  #welcome-section {
+    background-color: #111224;
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #welcome-section h1 {
+    color: var(--base-color2);
+    font-size: 38px;
+    font-style: "display", sans-serif;
+    font-weight: 700;
+    margin: 8px;
+  }
+  
+  #welcome-section p {
+    color: red;
+    font-size: 19px;
+    font-style:  italic;
+    margin: 3px;
+  }
+  #projects {
+    height: 500px; 
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  hr {
+  margin: 0;
+  }
+  
+  #projects h1 {
+    text-align: center;
+    color: var(--base-color3);
+    font-size: 28px;
+  }
+  
+  .project-tile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  img {
+  width: 300px;
+  height: 300px;
+  }
+  
+  .project-tile a p {
+    text-decoration: none;
+    font-size: 25px;
+    height: 40px;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: var(--base-color1);
+  }
+   .project-tile a {
+     text-decoration: none;
+     color: var(--base-color2);
+     font-style: oblique;
+     font-weight: bold;
+   }
+  
+   button {
+     font-size: 25px;
+     font-style: -sans-serif;
+     font-weight: bold;
+     color: var(--base-color2);
+     background-color: var(--base-color1);
+     border: solid var(--base-color3);
+     border-radius: 5px;
+     padding: 10px;
+   }
+  
+   .show {
+     transition: transform 0.2s ease-in;
+   }
+  
+   .show:hover {
+     transform: translateY(5px);
+   }
+  
+   #projects a:hover {
+     background-color: var(--base-color3);
+     color: white;
+   }
+  
+   #contact {
+     background-color: #222334;
+     height: 500px;
+     width: 100%;
+     margin-top: 10px;
+     text-align: center; 
+   }
+  
+   #contact > h1 {
+    color: var(--base-color2);
+    padding-top: 200px;
+    font-size: 38px;
+    font-style: "display", sans-serif;
+    font-weight: 700;
+    margin: 0
+   }
+  
+   .question {
+    color: var(--base-color2);
+    font-size: 19px;
+    font-style:  italic;
+    margin-bottom: 5px;
+   }
+  
+   .social-medias {
+     display: flex;
+     max-width: 700px;
+     margin: auto;
+     margin-top: 30px;
+     justify-content: space-around;
+     align-items: center; 
+   }
+  
+   .social-medias #profile-link {
+     text-decoration: none;
+     transition: transform 0.21s ease-in-out;
+     color: var(--base-color2);
+     display: flex;
+     align-items: center;
+     margin: 20px;
+     font-size: 20;
+   }
+  
+   .social-medias #profile-link:hover {
+    transform: translateY(10px);
+   }
+  
+   footer {
+     border-top: solid 5px red;
+     padding: 30px;
+     font-size: 25px;
+     color: black;
+     text-align: center;
+   }
+  
+   @media only screen (max-width: 400px) {
+     h1{
+       color: red;
+       font-size: 20px;
+     }
+  
+   }
